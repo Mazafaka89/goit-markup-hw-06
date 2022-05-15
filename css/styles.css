@@ -1199,6 +1199,7 @@ background-color: var(--white-bc-color);
     margin-top: 4px;
     margin-bottom: 20px;
     padding: 12px 16px;
+    resize: none;
 
     transition: border 250ms var(--timing-function);
     color: var(--secondary-text-color);
