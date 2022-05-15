@@ -360,7 +360,31 @@
             <svg class="modal-icon" width="30" height="30">
                 <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
-        </button>  
+        </button>
+        
+        <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
+        <form>
+            <label class="modal-label" for="name">Имя
+            <input type="text" class="modal-input" name="name" id="name"/>
+        </label>
+
+            <label class="modal-label" for="tel">Телефон
+            <input type="tel" class="modal-input" name="tel" id="tel"/>
+        </label>
+
+            <label class="modal-label" for="email">Почта
+            <input type="email" class="modal-input" name="email" id="email"/>
+        </label>
+
+        <div class="modal-field">
+            <label class="modal-label" for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" placeholder="Введите текст" class="modal-comment"></textarea>
+        </div>
+
+
+            <button type="submit" class="modal-submit-btn">Отправить</button>
+
+        </form> 
       </div>  
     </div>
     <script src="./js/modal.js"></script>
