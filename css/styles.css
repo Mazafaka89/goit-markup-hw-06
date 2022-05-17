@@ -1153,6 +1153,11 @@ background-color: var(--white-bc-color);
     color: var(--primary-text-color); 
 }
 
+.modal-field {
+    margin-bottom: 10px;
+
+}
+
 .modal-label {
 
     display: block;
@@ -1170,19 +1175,38 @@ background-color: var(--white-bc-color);
     border: 1px solid #21212133;
     border-radius: 4px;
 
-    margin-bottom: 10px;
     margin-top: 4px;
-    padding-left: 12px;
+    padding-left: 42px;
 
     transition: border 250ms var(--timing-function);
     color: var(--secondary-text-color);
 }
 
 .modal-input:focus {
-
     outline: none;
     border: 1px solid #2196F3; 
+    fill: var(--accent-color)
 }
+
+
+.modal-input-wrap {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+
+    left: 12px;
+    bottom: 11px;
+        /*top: 50%;
+        transform: translateY(-50%);*/
+fill: var(--primary-text-color);
+transition: fill 250ms var(--timing-function);
+}
+
+.modal-input:focus + .input-icon {
+    fill: var(--accent-color)
+} 
 
 .modal-comment {
 
@@ -1214,6 +1238,44 @@ background-color: var(--white-bc-color);
     color: #75757580;
   }
 
+.check-text {
+    display: flex;
+} 
+
+.check-text span {
+      display: flex;
+      width: 16px;
+      height: 15px;
+
+      margin-right: 7px;
+      align-items: center;
+      justify-content: center;
+
+      border: 2px solid var(--primary-text-color);
+      border-radius: 4px;
+  }
+
+.check-icon {
+      fill: transparent;
+  }
+
+.input-check:checked + .check-text span {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color); 
+      background-size: contain;
+  }
+
+.input-check:checked + .check-text .check-icon {
+    fill: var(--white-bc-color );
+}
+
+.input-check:focus + .check-text span {
+    border-color: var(--accent-color);
+}
+/*
+.input-check:focus + .check-text span {
+    background-color: var(--accent-color);  
+} */
 /*
 .modal-submit-btn {
     width: 200px; 
