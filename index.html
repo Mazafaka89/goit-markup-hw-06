@@ -324,6 +324,7 @@
             </ul>
         </address>
     </div>
+
         <div class="footer-social">
             <h3 class="footer-social-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
             <ul class="footer-social-list list">
@@ -353,8 +354,30 @@
             </li>
             </ul>
         </div>
+
+        <form class="mailing-list">
+
+            <p class="mailing-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+            <div class="subscribe-field" role="group">
+              <input class="subscribe-email" type="email" name="subscribe" placeholder="E-mail" />
+
+              <button class="subscribe-btn" type="submit">
+                <span class="subscribe-text">Подписаться</span>
+                <svg class="subscribe-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+
+
+
+
+
     </div>
     </footer>
+
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
@@ -364,7 +387,9 @@
         </button>
         
         <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
+
         <form>
+
         <div class="modal-field">
             <label class="modal-label" for="name">Имя</label>
             <div class="modal-input-wrap">
@@ -404,14 +429,12 @@
         </div>
 
         <div class="modal-checkbox-field">
-            <input type="checkbox" class="input-check visually-hidden" id="input-check" name="policy" value="policy">
-            <label for="input-check" class="check-text"> 
-            <span>
-                <svg class="check-icon" width="11" height="8">
-                    <use href="./images/symbol-defs.svg#icon-check"></use>
-                </svg>
-            </span> Соглашаюсь с рассылкой и принимаю Условия договора
-        </label>
+            <input type="checkbox" class="input-check visually-hidden" id="input-check" name="policy" value="policy" />
+            <label for="input-check" class="check-text">
+            <a class="checkbox-text">Соглашаюсь с рассылкой и принимаю</a>
+            <a href="" class="checkbox-link cursor">Условия договора</a>
+            </label>
+
         </div>
 
             <button type="submit" class="modal-submit-btn">Отправить</button>
