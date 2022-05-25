@@ -1243,8 +1243,9 @@ background-color: var(--white-bc-color);
     width: 448px;
     font-weight: 700;
     font-size: 20px;
-    font-weight: 1.15;
+    line-height: 1.15;
     text-align: center;
+    letter-spacing: 0.03em;
 
     margin-bottom: 12px; 
 
@@ -1355,6 +1356,7 @@ transition: fill 250ms var(--timing-function);
 
   .check-text {
     display: flex;
+    align-items: center;
 
       font-size: 14px;
       line-height: 1.46;
